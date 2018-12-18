@@ -4,15 +4,16 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var { app } = require('../app');
+var { port, graphQLPath } = require('../config')
 var debug = require('debug')('cloud-boilerplate-express-apollo:server');
 var http = require('http');
 
 /**
- * Get port from environment and store in Express.
+ * Get port and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(port);
 app.set('port', port);
 
 /**
@@ -87,4 +88,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  debug(`Graphql endpoint is set to: ${graphQLPath}`)
 }

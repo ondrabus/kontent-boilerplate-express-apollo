@@ -21,4 +21,5 @@ block content
   .row.marketing
     h2 Articles from the Dancing Goat Sample Site
   .row.marketing
-    +article-thumbnail
+    each article in articles
+      +article-thumbnail(article)

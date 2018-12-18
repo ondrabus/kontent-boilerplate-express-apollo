@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Debug server",
       "program": "${workspaceFolder}\\bin\\www",
       "env": {
         "DEBUG": "cloud-boilerplate-express-apollo:*"
