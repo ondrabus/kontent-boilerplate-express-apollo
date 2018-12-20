@@ -27,6 +27,6 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "kentico-cloud-graphql-schema-generator": "0.0.1-beta4"
+    "kentico-cloud-graphql-schema-generator": "1.0.0"
   }
 }

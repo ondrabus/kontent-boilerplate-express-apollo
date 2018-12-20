@@ -3,6 +3,7 @@ const router = express.Router();
 
 const gql = require('graphql-tag');
 const apolloClient = require('../apolloClient');
+const { graphQLPath } = require('../config');
 
 /* GET home page. */
 router.get('/', async function (_req, res, _next) {
@@ -28,7 +29,10 @@ router.get('/', async function (_req, res, _next) {
     } 
     `
   });
-  res.render('index', { articles: result.data.itemsByType });
+  res.render('index', { 
+    articles: result.data.itemsByType, 
+    playgroundLink: graphQLPath 
+  });
 });
 
 module.exports = router;
