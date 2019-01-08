@@ -1,7 +1,11 @@
 {
   "deliveryConfig": {
     "projectId": "975bf280-fd91-488c-994c-2f04416e5ee3",
-    "typeResolvers": []
+    "typeResolvers": [],
+    "customHeaders": [{
+      "header": "X-KC-SOURCE",
+      "value": "cloud-boilerplate-express-apollo;0.0.1-beta"
+    }]
   },
   "host": "127.0.0.1",
   "graphQLPath": "/graphql",
