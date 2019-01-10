@@ -6,9 +6,4 @@ before_script:
 - npm install
 deploy:
   provider: azure_web_apps
-  username: $AZURE_WA_USERNAME
-  password: $AZURE_WA_PASSWORD
-  site: cloud-boilerplate-express-apollo
   verbose: true
-  on:
-    branch: master
