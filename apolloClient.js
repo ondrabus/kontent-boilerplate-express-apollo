@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
 
 const { port, graphQLPath, host } = require('./config');
 
-const uri = process.env.NODE_ENV === 'production'? graphQLPath : `http://${host}:${process.env.PORT || port}${graphQLPath}`;
+const uri = `http://${host}:${process.env.PORT || port}${graphQLPath}`;
 const link = createHttpLink({uri, fetch });
 const cache = new InMemoryCache();
 
