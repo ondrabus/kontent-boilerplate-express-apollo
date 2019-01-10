@@ -7,5 +7,6 @@ before_script:
 deploy:
   provider: azure_web_apps
   site: cloud-boilerplate-express-apollo
+  verbose: true
   on:
     branch: master
