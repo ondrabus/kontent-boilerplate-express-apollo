@@ -14,7 +14,7 @@ const { graphQLPath } = require('./config');
 const app = express();
 
 // Apollo Server setup
-const apolloServer = new ApolloServer({ typeDefs: [TYPE_DEFINITION, queryTypes], resolvers });
+const apolloServer = new ApolloServer({playground: true, typeDefs: [TYPE_DEFINITION, queryTypes], resolvers });
 apolloServer.applyMiddleware({ app, path: graphQLPath });
 
 // view engine setup

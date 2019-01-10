@@ -5,7 +5,8 @@ const fetch = require('node-fetch');
 
 const { port, graphQLPath, host } = require('./config');
 
-const link = createHttpLink({uri: `http://${host}:${process.env.PORT || port}${graphQLPath}`,  fetch });
+const uri = process.env.NODE_ENV === 'production'? graphQLPath : `http://${host}:${process.env.PORT || port}${graphQLPath}`;
+const link = createHttpLink({uri, fetch });
 const cache = new InMemoryCache();
 
 const client = new ApolloClient({
