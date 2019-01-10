@@ -19,7 +19,7 @@ Server converts [Kentico Cloud Delivery REST API](https://developer.kenticocloud
 3. Install the dependencies
    * `npm install`
 4. Run the boilerplate
-   * `npm start`
+   * `npm run debug`
 5. Open the browser on http://localhost:3000
 
 # Other commands

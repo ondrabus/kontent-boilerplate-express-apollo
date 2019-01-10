@@ -2,13 +2,16 @@
   "name": "cloud-boilerplate-express-apollo",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run generate-schema && node ./bin/www",
+    "start": "node ./bin/www",
     "debug": "npm run generate-schema && cross-env DEBUG=cloud-boilerplate-express-apollo:* node ./bin/www",
     "generate-schema": "kc-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kentico/cloud-boilerplate-express-apollo.git"
+  },
+  "engines": {
+    "node": ">=10.15.0"
   },
   "keywords": [
     "graphql",
