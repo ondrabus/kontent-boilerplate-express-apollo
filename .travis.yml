@@ -1,0 +1,11 @@
+dist: trusty
+language: node_js
+node_js:
+- "stable"
+before_script:
+- npm install
+deploy:
+  provider: azure_web_apps
+  site: cloud-boilerplate-express-apollo
+  on:
+    branch: master
