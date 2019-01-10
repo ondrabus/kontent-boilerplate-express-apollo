@@ -1,6 +1,6 @@
 {
   "name": "cloud-boilerplate-express-apollo",
-  "version": "0.0.1-beta",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "npm run generate-schema && node ./bin/www",
