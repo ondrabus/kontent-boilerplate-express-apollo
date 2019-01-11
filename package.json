@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "debug": "npm run generate-schema && cross-env DEBUG=cloud-boilerplate-express-apollo:* node ./bin/www",
-    "generate-schema": "kc-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js"
+    "generate-schema": "kc-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js",
+    "predeploy": "node ./predeploy.js"
   },
   "repository": {
     "type": "git",

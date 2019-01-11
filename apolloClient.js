@@ -3,10 +3,10 @@ const { InMemoryCache } = require('apollo-cache-inmemory');
 const { createHttpLink } = require('apollo-link-http');
 const fetch = require('node-fetch');
 
-const { port, graphQLPath, host } = require('./config');
+const { protocol, graphQLPath, host } = require('./config');
 
-const uri = `http://${host}:${process.env.PORT || port}${graphQLPath}`;
-const link = createHttpLink({uri, fetch });
+const uri = `${protocol}${host}${graphQLPath}`;
+const link = createHttpLink({ uri, fetch });
 const cache = new InMemoryCache();
 
 const client = new ApolloClient({
