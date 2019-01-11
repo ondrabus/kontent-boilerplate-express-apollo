@@ -1,5 +1,5 @@
 # Kentico Cloud Boilerplate for Express
-[<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](/docs/assets/template.png)
+[<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](https://cloud-boilerplate-express-apollo.azurewebsites.net)
 
 This boilerplate showcase how it is possible to combine [Node.js](https://nodejs.org/en/) web application framework [Express](https://expressjs.com/) with [GraphQL](https://graphql.org/).
 
@@ -19,7 +19,7 @@ Server converts [Kentico Cloud Delivery REST API](https://developer.kenticocloud
 3. Install the dependencies
    * `npm install`
 4. Run the boilerplate
-   * `npm start`
+   * `npm run debug`
 5. Open the browser on http://localhost:3000
 
 # Other commands
@@ -60,7 +60,7 @@ Data provided by the GraphQL endpoint is consumed in [the controller](https://gi
 
 ## Adjusting the boilerplate to your project. 
 1. Point the application [to your project ID](#How-to-adjust-the-boilerplate-for-different-project).
-2. Regenerate the schema [manually](#Regenerate-GraphQL-schema)
+2. Regenerate the schema [manually](#Regenerate-GraphQL-schema).
 3. Define the queries type schema in [queryTypes](https://github.com/Kentico/cloud-boilerplate-express-apollo/blob/master/graphQL/queries.js#L5) constant.
 4. Implement the queries by the schema in [Query property in resolvers constant](https://github.com/Kentico/cloud-boilerplate-express-apollo/blob/master/graphQL/queries.js#L24).
 5. Use the queries to load data to render in [controller](https://github.com/Kentico/cloud-boilerplate-express-apollo/blob/master/routes/index.js).

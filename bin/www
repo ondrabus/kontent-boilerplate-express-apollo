@@ -13,7 +13,7 @@ var http = require('http');
  * Get port and store in Express.
  */
 
-var port = normalizePort(port);
+var port = normalizePort(process.env.PORT || port);
 app.set('port', port);
 
 /**

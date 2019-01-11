@@ -1,0 +1,12 @@
+dist: trusty
+language: node_js
+node_js:
+- "stable"
+before_script:
+- npm install
+- npm run generate-schema
+before_deploy:
+- npm run predeploy
+deploy:
+  skip-cleanup: true
+  provider: azure_web_apps
