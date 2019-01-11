@@ -4,8 +4,9 @@ node_js:
 - "stable"
 before_script:
 - npm install
-script:
 - npm run generate-schema
+before_deploy:
+- npm run predeploy
 deploy:
   skip-cleanup: true
   provider: azure_web_apps
