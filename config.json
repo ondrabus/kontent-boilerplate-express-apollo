@@ -10,5 +10,6 @@
   "protocol": "http://",
   "host": "127.0.0.1",
   "graphQLPath": "/graphql",
-  "port": 3000
+  "port": 3000,
+  "UATrackingId" : "UA-128307780-2"
 }

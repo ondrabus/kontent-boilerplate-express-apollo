@@ -41,6 +41,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "express-ga-middleware": "^0.1.6",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.10.0",
     "http-errors": "~1.6.2",
