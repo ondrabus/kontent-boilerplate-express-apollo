@@ -5,11 +5,12 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const { ApolloServer } = require('apollo-server-express');
+const expressGa = require('express-ga-middleware');
 
 const { TYPE_DEFINITION } = require('./graphQL/types');
 const { queryTypes, resolvers } = require('./graphQL/queries')
 const indexRouter = require('./routes/index');
-const { graphQLPath } = require('./config');
+const { graphQLPath, UATrackingId } = require('./config');
 
 const app = express();
 
@@ -43,6 +44,8 @@ app.use(sassMiddleware({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(expressGa(UATrackingId));
 
 app.use('/', indexRouter);
 
