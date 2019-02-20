@@ -1,7 +1,7 @@
 # Kentico Cloud Boilerplate for Express
 [<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](https://cloud-boilerplate-express-apollo.azurewebsites.net)
 
-[![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](http://cloud-boilerplate-express-apollo.azurewebsites.net/)
+[![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](https://cloud-boilerplate-express-apollo.azurewebsites.net/)
 
 This boilerplate showcase how it is possible to combine [Node.js](https://nodejs.org/en/) web application framework [Express](https://expressjs.com/) with [GraphQL](https://graphql.org/).
 
