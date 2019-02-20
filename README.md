@@ -1,6 +1,8 @@
 # Kentico Cloud Boilerplate for Express
 [<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](https://cloud-boilerplate-express-apollo.azurewebsites.net)
 
+[![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](http://cloud-boilerplate-express-apollo.azurewebsites.net/)
+
 This boilerplate showcase how it is possible to combine [Node.js](https://nodejs.org/en/) web application framework [Express](https://expressjs.com/) with [GraphQL](https://graphql.org/).
 
 Server converts [Kentico Cloud Delivery REST API](https://developer.kenticocloud.com/reference) to the [GraphQL](https://graphql.org/) using [Apollo framework](https://www.apollographql.com/) and render the output using [Pug view engine](https://pugjs.org/).
