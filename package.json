@@ -49,11 +49,11 @@
     "morgan": "~1.9.0",
     "node-fetch": "^2.3.0",
     "node-sass-middleware": "0.11.0",
-    "pug": "2.0.0-beta11",
+    "pug": "^2.0.3",
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "kentico-cloud-graphql-schema-generator": "1.0.1"
+    "kentico-cloud-graphql-schema-generator": "1.0.2"
   }
 }
