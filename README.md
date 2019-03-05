@@ -2,6 +2,7 @@
 [<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](https://cloud-boilerplate-express-apollo.azurewebsites.net)
 
 [![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](https://cloud-boilerplate-express-apollo.azurewebsites.net/)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
 
 [![Build Status](https://api.travis-ci.org/Kentico/cloud-boilerplate-express-apollo.svg?branch=master)](https://travis-ci.org/Kentico/cloud-boilerplate-express-apollo)
 [![Maintainability](https://api.codeclimate.com/v1/badges/01dee6f2cdaf57755707/maintainability)](https://codeclimate.com/github/Kentico/cloud-boilerplate-express-apollo/maintainability)
