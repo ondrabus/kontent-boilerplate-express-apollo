@@ -95,7 +95,7 @@ GraphQL endpoints are provided by the  [Apollo Server](https://www.apollographql
 
 Data provided by the GraphQL endpoint is consumed in [the controller](https://github.com/Kentico/cloud-boilerplate-express-apollo/blob/master/routes/index.js#L9) using the [Apollo client](https://www.apollographql.com/docs/react/) and rendered using the [Pug view engine](https://pugjs.org/).
 
-## Adjusting the boilerplate to your project. 
+## Adjusting the boilerplate to your project
 1. [Point the application](#How-to-adjust-the-boilerplate-for-different-projects) to your project ID.
 2. [Regenerate the schema](#Regenerate-GraphQL-schema) manually.
 3. [Define the queries type](https://github.com/Kentico/cloud-boilerplate-express-apollo/blob/master/graphQL/queries.js#L5) schema in `queryTypes` constant.
