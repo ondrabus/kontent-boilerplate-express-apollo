@@ -4,6 +4,10 @@ const { deliveryConfig } = require('../config');
 
 const queryTypes = `
 # The "Query" type is the root of all GraphQL queries.
+extend type RichTextElement {
+  resolvedHtml: String
+}
+
 type Query {
   items: [ContentItem],
   itemsByType(type: String!, limit: Int, depth: Int, order: String): [ContentItem]
@@ -22,6 +26,7 @@ const resolvers = {
     items: async () => {
       const response = await deliveryClient.items()
         .getPromise();
+      resolveHtml(response.items);
       return response.items;
     },
     itemsByType: async (_, { type, limit, depth, order }) => {
@@ -33,6 +38,7 @@ const resolvers = {
 
       const response = await query
         .getPromise();
+      resolveHtml(response.items);
       return response.items;
     }
   },
@@ -44,6 +50,25 @@ const convertSnakeCaseToPascalCase = (item) => {
     .map((str) => str.slice(0, 1).toUpperCase() + str.slice(1, str.length))
     .join('');
 }
+
+/**
+ * Create a new property with resolved Html.
+ * @param {Array} items Items response from JS SDK.
+ */
+const resolveHtml = (items) => {
+  items.forEach((item) => {
+    Object
+      .keys(item)
+      .filter((key) =>
+        item
+         && item[key] 
+         && item[key].type
+         && item[key].type === 'rich_text')
+      .forEach((key) => {
+        item[key].getHtml()
+      });
+  });
+};
 
 module.exports = {
   resolvers,
