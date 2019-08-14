@@ -4,7 +4,7 @@ mixin article-thumbnail(article)
       h4= article.title.value
   .row
     .col-sm-4
-      img(src=article.teaser_image.assets[0].url, alt=article.teaser_image.assets[0].name).img-responsive
+      img(src=article.teaser_image.value[0].url, alt=article.teaser_image.value[0].name).img-responsive
     .col-sm-8
       p= article.summary.value
       p
