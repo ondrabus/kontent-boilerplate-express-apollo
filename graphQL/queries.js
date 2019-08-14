@@ -35,7 +35,7 @@ const resolvers = {
         .getPromise();
       return response.items;
     }
-  },
+  }
 };
 
 const convertSnakeCaseToPascalCase = (item) => {
@@ -49,4 +49,3 @@ module.exports = {
   resolvers,
   queryTypes
 }
-

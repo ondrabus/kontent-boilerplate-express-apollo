@@ -2,11 +2,13 @@
   "name": "cloud-boilerplate-express-apollo",
   "version": "1.0.1",
   "scripts": {
+    "lint": "eslint ./ --ext .json --ext .js",
     "start": "node ./bin/www",
     "debug": "npm run generate-schema && cross-env DEBUG=cloud-boilerplate-express-apollo:* node ./bin/www",
     "generate-schema": "kc-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js",
     "predeploy": "node ./predeploy.js"
   },
+  "precommit": "lint",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kentico/cloud-boilerplate-express-apollo.git"
@@ -54,6 +56,14 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "kentico-cloud-graphql-schema-generator": "1.0.2"
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-json": "^1.4.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "kentico-cloud-graphql-schema-generator": "1.0.2",
+    "pre-commit": "git://github.com/observing/pre-commit.git"
   }
 }
