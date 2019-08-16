@@ -5,7 +5,7 @@
   },
   "trackingHeader": {
     "header": "X-KC-SOURCE",
-    "value": "cloud-boilerplate-express-apollo;1.0.2"
+    "value": "cloud-boilerplate-express-apollo;2.0.0-beta1"
   },
   "protocol": "http://",
   "host": "127.0.0.1",
