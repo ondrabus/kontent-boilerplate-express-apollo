@@ -23,12 +23,21 @@ type Asset {
   size: Int
   description: String
   url: String
+  width: Int
+  height: Int
 }
 type Link {
   codename: String
   itemID: String
   urlSlug: String
   type: String
+}
+type RichTextImage {
+  imageId: String!
+  url: String!
+  description: String
+  width: Int
+  height: Int
 }
 type TextElement {
   type: String!
@@ -38,39 +47,33 @@ type TextElement {
 type NumberElement {
   type: String!
   name: String!
-  value: String
-  number: Int
+  value: Int
 }
 type DateTimeElement {
   type: String!
   name: String!
   value: String
-  datetime: String
 }
 type MultipleChoiceElement {
   type: String!
   name: String!
-  value: String
-  options: [MultipleChoiceElementOption]
+  value: [MultipleChoiceElementOption]
 }
 type UrlSlugElement {
   type: String!
   name: String!
   value: String
-  data: String
 }
 type TaxonomyElement {
   type: String!
   name: String!
   value: [TaxonomyTerm]
   taxonomyGroup: String
-  taxonomyTerms: [TaxonomyTerm]
 }
 type AssetElement {
   type: String!
   name: String!
   value: [Asset]
-  assets: [Asset]
 }
 type RichTextElement {
   type: String!
@@ -78,6 +81,13 @@ type RichTextElement {
   value: String
   linkedItemCodenames: [String]
   links: [Link]
+  images: [RichTextImage]
+  resolvedHtml: String
+}
+type CustomElement {
+  type: String!
+  name: String!
+  value: String
 }
 
 type AboutUsContentType implements ContentItem {
@@ -89,6 +99,7 @@ type AboutUsContentType implements ContentItem {
   metadata__twitter_site: TextElement
   url_pattern: UrlSlugElement
   metadata__twitter_image: AssetElement
+  sitemap: TaxonomyElement
   metadata__twitter_creator: TextElement
   metadata__twitter_title: TextElement
   metadata__twitter_description: TextElement
@@ -113,6 +124,7 @@ type AccessoryContentType implements ContentItem {
   metadata__twitter_title: TextElement
   metadata__twitter_description: TextElement
   metadata__og_image: AssetElement
+  sitemap: TaxonomyElement
   product_status: TaxonomyElement
   image: AssetElement
   product_name: TextElement
@@ -134,6 +146,7 @@ type ArticleContentType implements ContentItem {
   metadata__twitter_creator: TextElement
   title: TextElement
   summary: TextElement
+  sitemap: TaxonomyElement
   metadata__twitter_title: TextElement
   metadata__twitter_description: TextElement
   meta_description: TextElement
@@ -156,6 +169,7 @@ type BrewerContentType implements ContentItem {
   metadata__twitter_image: AssetElement
   metadata__twitter_creator: TextElement
   url_pattern: UrlSlugElement
+  sitemap: TaxonomyElement
   short_description: RichTextElement
   product_status: TaxonomyElement
   metadata__twitter_title: TextElement
@@ -174,6 +188,7 @@ type CafeContentType implements ContentItem {
   street: TextElement
   state: TextElement
   zip_code: TextElement
+  sitemap: TaxonomyElement
 }
 
 type CoffeeContentType implements ContentItem {
@@ -192,6 +207,7 @@ type CoffeeContentType implements ContentItem {
   metadata__twitter_image: AssetElement
   metadata__twitter_creator: TextElement
   country: TextElement
+  sitemap: TaxonomyElement
   metadata__twitter_title: TextElement
   short_description: RichTextElement
   processing: TaxonomyElement
@@ -206,11 +222,13 @@ type FactAboutUsContentType implements ContentItem {
   system: SystemInfo!
   description: RichTextElement
   title: TextElement
+  sitemap: TaxonomyElement
   image: AssetElement
 }
 
 type GrinderContentType implements ContentItem {
   system: SystemInfo!
+  sitemap: TaxonomyElement
   metadata__og_description: TextElement
   metadata__meta_title: TextElement
   metadata__og_title: TextElement
@@ -233,6 +251,7 @@ type GrinderContentType implements ContentItem {
 
 type HeroUnitContentType implements ContentItem {
   system: SystemInfo!
+  sitemap: TaxonomyElement
   title: TextElement
   image: AssetElement
   marketing_message: RichTextElement
@@ -255,6 +274,7 @@ type HomeContentType implements ContentItem {
   metadata__twitter_description: TextElement
   metadata__og_image: AssetElement
   url_pattern: UrlSlugElement
+  sitemap: TaxonomyElement
   contact: RichTextElement
 }
 
@@ -270,6 +290,7 @@ type OfficeContentType implements ContentItem {
   email: TextElement
   phone: TextElement
   country: TextElement
+  sitemap: TaxonomyElement
   city: TextElement
   name: TextElement
   zip_code: TextElement
