@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "lint": "eslint ./ --ext .json --ext .js",
-    "start": "npm rebuild node-sass && node ./bin/www",
+    "start": "node ./bin/www",
     "debug": "npm run generate-schema && cross-env DEBUG=kontent-boilerplate-express-apollo:* node ./bin/www",
     "generate-schema": "kontent-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js",
     "predeploy": "node ./predeploy.js"
