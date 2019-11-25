@@ -6,7 +6,7 @@
 
 var { app } = require('../app');
 var { port, graphQLPath, host } = require('../config')
-var debug = require('debug')('cloud-boilerplate-express-apollo:server');
+var debug = require('debug')('kontent-boilerplate-express-apollo:server');
 var http = require('http');
 
 /**

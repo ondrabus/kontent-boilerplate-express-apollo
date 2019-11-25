@@ -1,4 +1,4 @@
-const { DeliveryClient } = require('kentico-cloud-delivery');
+const { DeliveryClient } = require('@kentico/kontent-delivery');
 
 const { deliveryConfig, trackingHeader } = require('../config');
 

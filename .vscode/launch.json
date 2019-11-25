@@ -10,7 +10,7 @@
       "name": "Debug server",
       "program": "${workspaceFolder}\\bin\\www",
       "env": {
-        "DEBUG": "cloud-boilerplate-express-apollo:*"
+        "DEBUG": "kontent-boilerplate-express-apollo:*"
       }
     }
   ]

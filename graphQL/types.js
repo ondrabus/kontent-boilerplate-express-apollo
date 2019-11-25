@@ -23,21 +23,12 @@ type Asset {
   size: Int
   description: String
   url: String
-  width: Int
-  height: Int
 }
 type Link {
   codename: String
   itemID: String
   urlSlug: String
   type: String
-}
-type RichTextImage {
-  imageId: String!
-  url: String!
-  description: String
-  width: Int
-  height: Int
 }
 type TextElement {
   type: String!
@@ -47,33 +38,39 @@ type TextElement {
 type NumberElement {
   type: String!
   name: String!
-  value: Int
+  value: String
+  number: Int
 }
 type DateTimeElement {
   type: String!
   name: String!
   value: String
+  datetime: String
 }
 type MultipleChoiceElement {
   type: String!
   name: String!
-  value: [MultipleChoiceElementOption]
+  value: String
+  options: [MultipleChoiceElementOption]
 }
 type UrlSlugElement {
   type: String!
   name: String!
   value: String
+  data: String
 }
 type TaxonomyElement {
   type: String!
   name: String!
   value: [TaxonomyTerm]
   taxonomyGroup: String
+  taxonomyTerms: [TaxonomyTerm]
 }
 type AssetElement {
   type: String!
   name: String!
   value: [Asset]
+  assets: [Asset]
 }
 type RichTextElement {
   type: String!
@@ -81,13 +78,6 @@ type RichTextElement {
   value: String
   linkedItemCodenames: [String]
   links: [Link]
-  images: [RichTextImage]
-  resolvedHtml: String
-}
-type CustomElement {
-  type: String!
-  name: String!
-  value: String
 }
 
 type AboutUsContentType implements ContentItem {

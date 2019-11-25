@@ -1,15 +1,15 @@
 {
-  "name": "cloud-boilerplate-express-apollo",
+  "name": "kontent-boilerplate-express-apollo",
   "version": "2.0.0-beta1",
   "scripts": {
     "start": "node ./bin/www",
-    "debug": "npm run generate-schema && cross-env DEBUG=cloud-boilerplate-express-apollo:* node ./bin/www",
-    "generate-schema": "kc-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js",
+    "debug": "npm run generate-schema && cross-env DEBUG=kontent-boilerplate-express-apollo:* node ./bin/www",
+    "generate-schema": "kontent-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js",
     "predeploy": "node ./predeploy.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kentico/cloud-boilerplate-express-apollo.git"
+    "url": "git+https://github.com/Kentico/kontent-boilerplate-express-apollo.git"
   },
   "engines": {
     "node": ">=10.14.1"
@@ -23,17 +23,19 @@
     "web",
     "server",
     "kentico",
-    "kentico-cloud",
+    "kentico-kontent",
     "headless",
-    "cms"
+    "cms",
+    "caas"
   ],
   "author": "Ondřej Chrastina <ondrej.chrastina@gmail.com> (https://github.com/Simply007)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kentico/cloud-boilerplate-express-apollo/issues"
+    "url": "https://github.com/Kentico/kontent-boilerplate-express-apollo/issues"
   },
-  "homepage": "https://github.com/Kentico/cloud-boilerplate-express-apollo#readme",
+  "homepage": "https://github.com/Kentico/kontent-boilerplate-express-apollo#readme",
   "dependencies": {
+    "@kentico/kontent-delivery": "^8.1.0",
     "apollo-cache-inmemory": "^1.3.11",
     "apollo-client": "^2.4.7",
     "apollo-link-http": "^1.5.9",
@@ -45,7 +47,6 @@
     "graphql": "^0.13.2",
     "graphql-tag": "^2.10.0",
     "http-errors": "~1.6.2",
-    "kentico-cloud-delivery": "^6.0.0",
     "morgan": "~1.9.0",
     "node-fetch": "^2.3.0",
     "node-sass-middleware": "0.11.0",
@@ -53,7 +54,7 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "kentico-cloud-graphql-schema-generator": "1.0.2"
+    "@kentico/kontent-schema-generator-graphql": "^2.0.0-rebranding.0",
+    "cross-env": "^5.2.0"
   }
 }
