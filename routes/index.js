@@ -19,7 +19,7 @@ router.get('/', async function (_req, res, _next) {
             value
           }
           teaser_image {
-            assets {
+            value {
               name
               url
             }

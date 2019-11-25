@@ -1,13 +1,11 @@
 {
   "deliveryConfig": {
     "projectId": "975bf280-fd91-488c-994c-2f04416e5ee3",
-    "typeResolvers": [],
-    "globalHeaders": [
-      {
-        "header": "X-KC-SOURCE",
-        "value": "cloud-boilerplate-express-apollo;1.0.2"
-      }
-    ]
+    "typeResolvers": []
+  },
+  "trackingHeader": {
+    "header": "X-KC-SOURCE",
+    "value": "kontent-boilerplate-express-apollo;2.0.0-beta1"
   },
   "protocol": "http://",
   "host": "127.0.0.1",

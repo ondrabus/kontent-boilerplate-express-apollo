@@ -1,6 +1,6 @@
-const { DeliveryClient } = require('kentico-cloud-delivery');
+const { DeliveryClient } = require('@kentico/kontent-delivery');
 
-const { deliveryConfig } = require('../config');
+const { deliveryConfig, trackingHeader } = require('../config');
 
 const queryTypes = `
 # The "Query" type is the root of all GraphQL queries.
@@ -10,7 +10,10 @@ type Query {
 }
 `;
 
+deliveryConfig.globalHeaders = (_) => [trackingHeader];
 const deliveryClient = new DeliveryClient(deliveryConfig);
+
+
 const resolvers = {
   ContentItem: {
     __resolveType(item, _context, _info) {
@@ -21,7 +24,7 @@ const resolvers = {
   Query: {
     items: async () => {
       const response = await deliveryClient.items()
-        .getPromise();
+        .toPromise();
       return response.items;
     },
     itemsByType: async (_, { type, limit, depth, order }) => {
@@ -32,7 +35,7 @@ const resolvers = {
       order && query.orderParameter(order);
 
       const response = await query
-        .getPromise();
+        .toPromise();
       return response.items;
     }
   }
