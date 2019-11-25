@@ -1,6 +1,6 @@
 {
   "name": "kontent-boilerplate-express-apollo",
-  "version": "2.0.0-beta1",
+  "version": "2.0.0",
   "scripts": {
     "start": "node ./bin/www",
     "debug": "npm run generate-schema && cross-env DEBUG=kontent-boilerplate-express-apollo:* node ./bin/www",
@@ -54,7 +54,7 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "@kentico/kontent-schema-generator-graphql": "^2.0.0-rebranding.3",
+    "@kentico/kontent-schema-generator-graphql": "^2.0.0",
     "cross-env": "^5.2.0"
   }
 }
