@@ -1,8 +1,8 @@
 # Kentico Kontent Boilerplate for Express
 
-[<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](https://kontent-boilerplate-express-apollo.azurewebsites.net)
+[<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" />](https://kontent-boilerplate-apollo.herokuapp.com)
 
-[![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](https://kontent-boilerplate-express-apollo.azurewebsites.net/)
+[![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](https://kontent-boilerplate-apollo.herokuapp.com/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
 
 [![Build Status](https://api.travis-ci.com/Kentico/kontent-boilerplate-express-apollo.svg?branch=master)](https://travis-ci.com/Kentico/kontent-boilerplate-express-apollo)
