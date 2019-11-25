@@ -2,11 +2,13 @@
   "name": "kontent-boilerplate-express-apollo",
   "version": "2.0.0",
   "scripts": {
+    "lint": "eslint ./ --ext .json --ext .js",
     "start": "node ./bin/www",
     "debug": "npm run generate-schema && cross-env DEBUG=kontent-boilerplate-express-apollo:* node ./bin/www",
     "generate-schema": "kontent-generate-gql-schema --projectId 975bf280-fd91-488c-994c-2f04416e5ee3 --createModule --outputFile graphQL/types.js",
     "predeploy": "node ./predeploy.js"
   },
+  "precommit": "lint",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kentico/kontent-boilerplate-express-apollo.git"

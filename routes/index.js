@@ -26,12 +26,12 @@ router.get('/', async function (_req, res, _next) {
           }
         }
       }
-    } 
+    }
     `
   });
-  res.render('index', { 
-    articles: result.data.itemsByType, 
-    playgroundLink: graphQLPath 
+  res.render('index', {
+    articles: result.data.itemsByType,
+    playgroundLink: graphQLPath
   });
 });
 
