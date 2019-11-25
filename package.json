@@ -54,7 +54,7 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "@kentico/kontent-schema-generator-graphql": "^2.0.0-rebranding.0",
+    "@kentico/kontent-schema-generator-graphql": "^2.0.0-rebranding.3",
     "cross-env": "^5.2.0"
   }
 }

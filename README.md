@@ -51,7 +51,7 @@ With your application running, open http://localhost:3000/graphql and enter foll
         value
       }
       teaser_image {
-        assets {
+        value {
           name
           url
         }
