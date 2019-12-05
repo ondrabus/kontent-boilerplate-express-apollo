@@ -10,7 +10,7 @@ router.get('/', async function (_req, res, _next) {
   const result = await apolloClient.query({
     query: gql`
     {
-      itemsByType(type: "article", limit: 3, depth: 0, order: "elements.post_date") {
+      itemsByType(type: "article", limit: 3, depth: 2, order: "elements.post_date") {
         ... on ArticleContentType {
           title {
             value
@@ -24,9 +24,18 @@ router.get('/', async function (_req, res, _next) {
               url
             }
           }
+          related_articles{
+           	 value{
+             ... on ArticleContentType {
+           title{
+             value
+            }
+          }
+         }
         }
-      }
-    }
+       }
+     }
+   }
     `
   });
   res.render('index', {

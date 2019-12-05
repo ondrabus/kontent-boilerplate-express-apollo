@@ -9,3 +9,4 @@ mixin article-thumbnail(article)
       p= article.summary.value
       p
         a.btn.btn-sm.btn-primary(href='#', role='button') Read more
+        p= "Related articles: " + article.related_articles.value[0].title.value + ", " + article.related_articles.value[1].title.value

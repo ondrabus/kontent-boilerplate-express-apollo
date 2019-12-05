@@ -55,9 +55,18 @@ With your application running, open http://localhost:3000/graphql and enter foll
           name
           url
         }
+       }
+      related_articles{
+        value{
+    ... on ArticleContentType {
+      title{
+        value
       }
+     }
     }
+   }
   }
+ }
 }
 ```
 
