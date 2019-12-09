@@ -9,3 +9,6 @@ mixin article-thumbnail(article)
       p= article.summary.value
       p
         a.btn.btn-sm.btn-primary(href='#', role='button') Read more
+        p= article.related_articles.value.length ? "Related articles: ": undefined
+        each relativeArticle, index in article.related_articles.value
+          span=`${relativeArticle.title.value}${index !== article.related_articles.value.length-1 ? ', ': ''}`
