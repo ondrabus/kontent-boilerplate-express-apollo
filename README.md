@@ -120,4 +120,3 @@ Data provided by the GraphQL endpoint is consumed in [the controller](https://gi
 5. Use the queries to load data to [render in controller](https://github.com/Kentico/kontent-boilerplate-express-apollo/blob/master/routes/index.js).
 6. [Adjust the view template](https://github.com/Kentico/kontent-boilerplate-express-apollo/blob/master/views/index.pug) to display provided data.
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-boilerplate-express-apollo?pixel)
