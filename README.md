@@ -5,7 +5,7 @@
 [![Live demo](https://img.shields.io/badge/-Live%20Demo-brightgreen.svg)](https://kontent-boilerplate-apollo.herokuapp.com/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
 
-[![Build Status](https://api.travis-ci.com/Kentico/kontent-boilerplate-express-apollo.svg?branch=master)](https://travis-ci.com/Kentico/kontent-boilerplate-express-apollo)
+[![Build Status](https://github.com/kentico/kontent-boilerplate-express-apollo/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kentico/kontent-boilerplate-express-apollo/actions/workflows/deploy.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/01dee6f2cdaf57755707/maintainability)](https://codeclimate.com/github/Kentico/kontent-boilerplate-express-apollo/maintainability)
 
 This boilerplate showcases how it is possible to combine the [Node.js](https://nodejs.org/en/) web application framework [Express](https://expressjs.com/) with [GraphQL](https://graphql.org/).
