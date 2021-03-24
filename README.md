@@ -27,9 +27,12 @@ The server converts the [Kentico Kontent Delivery REST API](https://docs.kontent
    * `cd kontent-boilerplate-express-apollo`
 3. Install the dependencies.
    * `npm install`
-4. Run the boilerplate.
+4. Adjust config.json to point to your localhost
+   * `"protocol": "http://",`
+   * `"host": "127.0.0.1",`
+5. Run the boilerplate.
    * `npm run debug`
-5. Open http://localhost:3000 in your browser.
+6. Open http://localhost:3000 in your browser.
 
 #### Test queries
 

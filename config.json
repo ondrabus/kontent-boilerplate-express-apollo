@@ -7,8 +7,8 @@
     "header": "X-KC-SOURCE",
     "value": "kontent-boilerplate-express-apollo;2.0.0"
   },
-  "protocol": "http://",
-  "host": "127.0.0.1",
+  "protocol": "https://",
+  "host": "kontent-boilerplate-apollo.herokuapp.com",
   "graphQLPath": "/graphql",
   "port": 3000,
   "UATrackingId": "UA-69014260-8"
