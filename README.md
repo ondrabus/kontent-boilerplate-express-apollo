@@ -123,3 +123,7 @@ Data provided by the GraphQL endpoint is consumed in [the controller](https://gi
 5. Use the queries to load data to [render in controller](https://github.com/Kentico/kontent-boilerplate-express-apollo/blob/master/routes/index.js).
 6. [Adjust the view template](https://github.com/Kentico/kontent-boilerplate-express-apollo/blob/master/views/index.pug) to display provided data.
 
+## Release info
+
+Deployment to Heroku configured on Heroku.
+Credentials to Heroku instance are stored on Kentico Secret server.
