@@ -1,4 +1,4 @@
-# Kentico Kontent Boilerplate for Express
+# Kontent Boilerplate for Express
 
 [<img align="right" src="/docs/assets/template_thumbnail.png" alt="Boilerplate screenshot" width=350 />](https://kontent-boilerplate-apollo.herokuapp.com)
 
@@ -10,7 +10,7 @@
 
 This boilerplate showcases how it is possible to combine the [Node.js](https://nodejs.org/en/) web application framework [Express](https://expressjs.com/) with [GraphQL](https://graphql.org/).
 
-The server converts the [Kentico Kontent Delivery REST API](https://docs.kontent.ai/reference/kentico-kontent-apis-overview) to [GraphQL](https://graphql.org/) using the [Apollo framework](https://www.apollographql.com/) and then renders the output using the [Pug view engine](https://pugjs.org/).
+The server converts the [Kontent Delivery REST API](https://docs.kontent.ai/reference/kentico-kontent-apis-overview) that fetches data from [Kontent by Kentico to](https://kontent.ai) to [GraphQL](https://graphql.org/) using the [Apollo framework](https://www.apollographql.com/) and then renders the output using the [Pug view engine](https://pugjs.org/).
 
 ## Quick start
 
@@ -89,14 +89,14 @@ npm run debug
 
 ### Regenerate GraphQL schema
 
-Schema is generated using the [Kentico GraphQL schema generator](https://www.npmjs.com/package/@kentico/kontent-schema-generator-graphql) which automatically generates GraphQL data type schema based on the Kentico Kontent Project ID.
+Schema is generated using the [Kentico GraphQL schema generator](https://www.npmjs.com/package/@kentico/kontent-schema-generator-graphql) which automatically generates GraphQL data type schema based on the Kontent Project ID.
 
 To regenerate the schema, manually run:
 ```
 npm run generate-schema
 ```
 
-## How to change Kentico kontent Project ID
+## How to change Kontent Project ID
 
 * Change the `projectId` argument value in the scripts section found in [package.json](https://github.com/Kentico/kontent-boilerplate-express-apollo/blob/master/package.json#L8)
     * This value is used when the schema is regenerated. Basically, when the application is starting or when the generation is [triggered manually](#Regenerate-GraphQL-schema)
