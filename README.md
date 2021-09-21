@@ -10,7 +10,7 @@
 
 This boilerplate showcases how it is possible to combine the [Node.js](https://nodejs.org/en/) web application framework [Express](https://expressjs.com/) with [GraphQL](https://graphql.org/).
 
-The server converts the [Kontent Delivery REST API](https://docs.kontent.ai/reference/kentico-kontent-apis-overview) that fetches data from [Kontent by Kentico to](https://kontent.ai) to [GraphQL](https://graphql.org/) using the [Apollo framework](https://www.apollographql.com/) and then renders the output using the [Pug view engine](https://pugjs.org/).
+The server converts the [Kontent Delivery REST API](https://docs.kontent.ai/reference/kentico-kontent-apis-overview) that fetches data from [Kontent by Kentico](https://kontent.ai) to [GraphQL](https://graphql.org/) using the [Apollo framework](https://www.apollographql.com/) and then renders the output using the [Pug view engine](https://pugjs.org/).
 
 ## Quick start
 
